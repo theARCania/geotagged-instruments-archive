@@ -13,16 +13,16 @@ class Network {
 public:
     Network(); // Constructor
 
-    // --- User Management ---
+    //User Management
     void addUser(const std::string& name, const std::string& email, UserRole role);
     void displayUserProfile(const std::string& email) const;
     void displayAllUsers() const;
 
-    // --- Connection Management ---
+    //Connection Management
     void createConnection(const std::string& email1, const std::string& email2);
     void showConnections() const;
     
-    // --- Search & Filtering ---
+    //Search & Filtering
     void findMusiciansByInstrument(const std::string& instrument) const;
 
 
