@@ -22,21 +22,21 @@ enum class SkillLevel {
 
 class User {
 public:
-    // --- Constructors ---
+    //Constructors
     User(const std::string& name, const std::string& email, UserRole role);
 
-    // --- Public Methods ---
+    //Public Methods
     void displayProfile() const;
     void addInstrument(const std::string& instrument);
     void addGenre(const std::string& genre);
     void setSkillLevel(SkillLevel level);
 
-    // --- Getters ---
+    //Getters
     std::string getName() const;
     std::string getEmail() const;
 
 private:
-    // --- Private Member Variables ---
+    // Private Member Variables
     // Identification
     std::string name;
     std::string email; // Used as a unique identifier
